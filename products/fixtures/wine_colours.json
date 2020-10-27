@@ -1,0 +1,16 @@
+[
+    {
+        "pk": 1,
+        "model": "products.winecolour",
+        "fields": {
+            "colour": "White"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.winecolour",
+        "fields": {
+            "colour": "Red"
+        }
+    }
+]

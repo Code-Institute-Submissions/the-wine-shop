@@ -1,0 +1,30 @@
+[
+    {
+        "pk": 1,
+        "model": "products.wineorigin",
+        "fields": {
+            "origin": "Spain"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.wineorigin",
+        "fields": {
+            "origin": "New Zealand"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.wineorigin",
+        "fields": {
+            "origin": "Italy"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.wineorigin",
+        "fields": {
+            "origin": "South Eastern Australia"
+        }
+    }
+]

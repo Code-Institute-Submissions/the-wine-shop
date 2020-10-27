@@ -1,0 +1,106 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "origin": 3,
+            "colour": 1,
+            "name": "Sainsbury's Pinot Grigio, Taste the Difference 75cl",
+            "price": 6,
+            "description": "Elegant and dry, this Pinot Grigio is characterised by flavours of peaches, greengages and almonds. ",
+            "brand": "Sainsburys",
+            "image": 1
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "origin": 2,
+            "colour": 1,
+            "name": "Brancott Estate Flight Sauvignon Blanc 75cl",
+            "price": 7,
+            "description": "With fragrant passion fruit, lemons and grapefruit aromas on the nose. These aromas are followed by a sweet pungency and ripe lemon sherbet flavors that change to mangos. The palate shows great balance with a refreshing, crisp and lively acidity. A stunning, vibrant and refreshing low alcohol wine. Naturally 20% lower in alcohol and calories.",
+            "brand": "Brancott Estate",
+            "image": 2
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "origin": 4,
+            "colour": 1,
+            "name": "Hardys Varietal Chardonnay 75cl",
+            "price": 5.3,
+            "description": "A lively Chadonnay full of rich melon and peach flavours with a crisp finish - great with Thai fish cakes or chicken Caesar salad.",
+            "brand": "Hardys",
+            "image": 3
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "origin": 2,
+            "colour": 1,
+            "name": "Sainsbury's Coolwater Bay Marlborough Sauvignon, Taste the Difference 75cl",
+            "price": 8,
+            "description": "An elegant wine with delicate aromas of fresh herbs, citrus and stone fruits and flavours of zesty lemon and lime combined with a distinctive mineral note and a fresh finish. ",
+            "brand": "Sainsburys",
+            "image": 4
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "origin": 1,
+            "colour": 2,
+            "name": "Sainsbury's House Merlot 75cl",
+            "price": 4.4,
+            "description": "If you love easy-drinking, ultra smooth reds then this wine is for you. It is bursting with juicy plum and forest fruit flavours.  ",
+            "brand": "Sainsburys",
+            "image": 5
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "origin": 1,
+            "colour": 2,
+            "name": "Carta Roja Gran Reserva 75cl",
+            "price": 5.75,
+            "description": "Carta Roja is made traditionally from Monastrell grapes which produce rich and intense wines. This Grand Reservada is full-bodied with red fruit aromas and intense flavours of ripe plum and vanilla. Aged in vat, American oak barrels and matured in bottle, this wine has soft, smooth tannins.",
+            "brand": "Monastrell",
+            "image": 6
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "origin": 2,
+            "colour": 2,
+            "name": "Brancott Estate Hawkes Bay Merlot Red Wine 75cl",
+            "price": 7,
+            "description": "Dark berries and cocoa flavours create a smooth, mellow wine.",
+            "brand": "Brancott Estate",
+            "image": 7
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "origin": 4,
+            "colour": 2,
+            "name": "Yellow Tail Shiraz 75cl",
+            "price": 6,
+            "description": "This yellow tail Shiraz is everything a great wine should be - vibrant, smooth, rich and easy to drink.",
+            "brand": "Yellow Tail",
+            "image": 8
+        }
+    }
+]
