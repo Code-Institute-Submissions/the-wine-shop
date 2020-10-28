@@ -1,21 +1,26 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block content %}
-<div class="row low-row">
-    <div class="start-shopping col-lg-2 mx-auto d-flex justify-content-center">
-        <div class="shopping-btn ">
-            <h2>
-                <a href="" class="shopping-btn btn btn-lg rounded-0">Start Shopping</a>
-            </h2>
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col">
         </div>
     </div>
-    <!-- <div class="start-shopping d-flex justify-content-center">
-        <h2>
-            <a href="" class="shopping-btn btn btn-lg rounded-0 py-2 px-2">Start Shopping</a>
-        </h2>
-    </div> -->
 </div>
+{% endblock %}
 
+{% block content %}
+<div class="container">
+    <div class="row low-row">
+        <div class="start-shopping col-lg-2 mx-auto d-flex justify-content-center">
+            <div class="shopping-btn ">
+                <h2>
+                    <a href="{% url 'products' %}" class="shopping-btn btn btn-lg rounded-0">Start Shopping</a>
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
