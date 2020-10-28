@@ -6,17 +6,24 @@
         <li class="nav-item">
             <a class="nav-link" href="{% url 'products' %}">All Wines</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
+            Wines by colour
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="{% url 'products' %}?colour=Red">Red</a>
+                <a class="dropdown-item" href="{% url 'products' %}?colour=White">White</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Wines by region
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                <a class="dropdown-item" href="{% url 'products' %}?origin=Italy">Italy</a>
+                <a class="dropdown-item" href="{% url 'products' %}?origin=New Zealand">New Zealand</a>
+                <a class="dropdown-item" href="{% url 'products' %}?origin=South Eastern Australia">South East Australia</a>
+                <a class="dropdown-item" href="{% url 'products' %}?origin=Spain">Spain</a>
             </div>
         </li>
     </ul>
