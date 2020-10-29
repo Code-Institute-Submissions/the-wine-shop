@@ -116,6 +116,17 @@ p {
     font-size: 2vw;
 }
 
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.table-heading {
+    font-size: 1.5vw;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* padded top to push content down only on medium and up */

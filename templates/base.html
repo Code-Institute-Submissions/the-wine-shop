@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </form>
-            </div>
+                </div>
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                         <li class="list-inline-item dropdown">
@@ -73,6 +73,13 @@
                                 <div class="text-center">
                                     <div><i class="fas fa-shopping-cart fa-lg"></i></div>
                                     <p class="my-0">Cart</p>
+                                    <p class="my-0">
+                                    {% if grand_total %}
+                                        ${{ grand_total|floatformat:2 }}
+                                    {% else %}
+                                        $0.00
+                                    {% endif %}
+                                </p>
                                 </div>
                             </a>
                         </li>

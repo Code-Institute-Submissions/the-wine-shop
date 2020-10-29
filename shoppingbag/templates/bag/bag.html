@@ -22,18 +22,78 @@
     </div>
     <div class="row">
         <div class="col">
-            {% if bag_items %}
-                <div class="table-responsive"></div>
+            {% if shoppingbag_items %}
+                <div class="table-responsive">
+                
+                    <table class="table table-sm table-borderless">
+                        <thead class="">
+                            <tr class="table-heading">
+                                <th scope="col">Product Info</th>
+                                <th scope="col"></th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Qty</th>
+                                <th scope="col">Subtotal</th>
+                            </tr>
+                        </thead>
+
+                        {% for item in shoppingbag_items %}
+                        <tr>
+                            <td class="p-3 w-25">
+                                <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+                            </td>
+                            <td class="py-3">
+                                <p class="white my-0"><strong>{{ item.product.name }}</strong></p>
+                            </td>
+                            <td class="py-3">
+                                <p class="white my-0">${{ item.product.price }}</p>
+                            </td>
+                            <td class="py-3 w-25">
+                                <p class="white my-0">{{ item.quantity }}</p>
+                            </td>
+                            <td class="py-3">
+                                <p class="white my-0">${{ item.product.price }}</p>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        <tr>
+                            <td colspan="5" class="pt-5 text-right">
+                                <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
+                                <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
+                                <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                                {% if grand_total > subscription_level %}
+                                    <p class="mb-1 text-danger">
+                                        You could get 10% off and free delivery by taking out a subscription!
+                                    </p>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" class="text-right">
+                                <a href="{% url 'products' %}" class="shopping-btn btn page-btn rounded-0 btn-lg">
+                                    <span>
+                                        <i class="white fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="button-font">Keep Shopping</span>
+                                </a>
+                                <a href="" class="shopping-btn btn page-btn  rounded-0 btn-lg">
+                                    <span class="text-uppercase">Secure Checkout</span>
+                                    <span>
+                                        <i class="white fas fa-lock"></i>
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
             {% else %}
                 <p class="lead white mb-4">Your bag is currently empty.</p>
-
                 <a href="{% url 'products' %}" class="shopping-btn btn page-btn rounded-0 btn-lg">
-                    <span class="">
-                        <i class="fas white fa-chevron-left"></i>
+                    <span>
+                        <i class="white fas fa-chevron-left"></i>
                     </span>
                     <span class="button-font">Keep Shopping</span>
                 </a>
-                
             {% endif %}
         </div>
     </div>
