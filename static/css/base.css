@@ -110,6 +110,11 @@ p {
     font-size: 2vw;
 }
 
+.plus-minus {
+    background-color: rgba(129, 0, 32, 0.5);
+    color: white;
+}
+
 .button-font {
     font-family: 'Berkshire Swash', cursive;
     color: white;

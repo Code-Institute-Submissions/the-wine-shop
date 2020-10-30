@@ -22,7 +22,9 @@ def shoppingbag_contents(request):
         })
 
     if total > settings.SUBSCRIPTION_LEVEL and settings.SUBSCRIPTION:
-        total = total - Decimal(total * (settings.SUBSCRIPTION_DISCOUNT / 100))
+        total = total - Decimal(total * Decimal(settings.SUBSCRIPTION_DISCOUNT / 100))
+        delivery = 0
+    elif total == 0:
         delivery = 0
     else:
         delivery = 5
