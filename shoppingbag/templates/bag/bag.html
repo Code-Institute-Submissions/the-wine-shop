@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block page_header %}
 <div class="container header-container">
@@ -113,7 +114,7 @@
                                     </span>
                                     <span class="button-font">Keep Shopping</span>
                                 </a>
-                                <a href="" class="shopping-btn btn page-btn  rounded-0 btn-lg">
+                                <a href="{% url 'checkout' %}" class="shopping-btn btn page-btn  rounded-0 btn-lg">
                                     <span class="text-uppercase">Secure Checkout</span>
                                     <span>
                                         <i class="white fas fa-lock"></i>
