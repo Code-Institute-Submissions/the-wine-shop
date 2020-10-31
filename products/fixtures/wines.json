@@ -5,7 +5,7 @@
         "fields": {
             "origin": 3,
             "colour": 1,
-            "name": "Sainsbury's Pinot Grigio, Taste the Difference 75cl",
+            "name": "Sainsbury's Pinot Grigio Taste the Difference 75cl",
             "price": 6,
             "description": "Elegant and dry, this Pinot Grigio is characterised by flavours of peaches, greengages and almonds. ",
             "brand": "Sainsburys",
@@ -44,7 +44,7 @@
         "fields": {
             "origin": 2,
             "colour": 1,
-            "name": "Sainsbury's Coolwater Bay Marlborough Sauvignon, Taste the Difference 75cl",
+            "name": "Coolwater Bay Marlborough Sauvignon 75cl",
             "price": 8,
             "description": "An elegant wine with delicate aromas of fresh herbs, citrus and stone fruits and flavours of zesty lemon and lime combined with a distinctive mineral note and a fresh finish. ",
             "brand": "Sainsburys",

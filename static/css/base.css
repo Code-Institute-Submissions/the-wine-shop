@@ -147,6 +147,14 @@ p {
     font-size: 1.5rem;
 }
 
+label {
+    color: black;
+}
+
+.black-text {
+    color: black;
+}
+
 
 /* -------------------------------- Media Queries */
 
