@@ -32,13 +32,13 @@ class Order(models.Model):
     def update_total(self):
         """ Updates the grand total each time a line item is added, including any delivery costs """
 
-        self.order_total = self.lineitems.aggregate(Sum('line_total'))['line_total__sum']
-        if self.order_total > settings.SUBSCRIPTION_LEVEL and settings.SUBSCRIPTION:
+        self.order_total = self.lineitems.aggregate(Sum('line_total'))['line_total__sum'] or 0
+        if self.order_total > settings.SUBSCRIPTION_LEVEL:
             self.delivery_cost = 0
         else:
             self.delivery_cost = 5
         self.grand_total = self.order_total + self.delivery_cost
-        salf.save()
+        self.save()
 
     def save(self, *args, **kwargs):
         """ Overrides the original save method to set the order number if it hasn't already been set """
