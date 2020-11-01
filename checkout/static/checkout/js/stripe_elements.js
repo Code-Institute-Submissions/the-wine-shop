@@ -70,7 +70,7 @@ form.addEventListener('submit', function(ev) {
                         line2: $.trim(form.address2.value),
                         city: $.trim(form.town.value),
                         state: $.trim(form.county.value),
-                        country: 'us',//$.trim(form.country.value),
+                        country: $.trim(form.country.value),
                     }
                 }
             },
@@ -82,7 +82,7 @@ form.addEventListener('submit', function(ev) {
                     line2: $.trim(form.address2.value),
                     city: $.trim(form.town.value),
                     state: $.trim(form.county.value),
-                    country: 'us',//$.trim(form.country.value),
+                    country: $.trim(form.country.value),
                     postal_code: $.trim(form.postcode.value),
                 }
             },
