@@ -105,7 +105,7 @@ button {
     border-style: outset;
     border-color: none;
     border-image: initial;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
 }
 
@@ -241,9 +241,9 @@ p {
     font-size: 1.5rem;
 }
 
-/* label {
+.form-check-label {
     color: black;
-} */
+}
 
 .allauth-form-inner-content label:not([for='id_remember']) {
     display: none;
