@@ -241,8 +241,12 @@ p {
     font-size: 1.5rem;
 }
 
-label {
+/* label {
     color: black;
+} */
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
 }
 
 .black-text {
