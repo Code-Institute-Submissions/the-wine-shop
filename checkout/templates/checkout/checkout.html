@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="row mx-3">
-        <div class="order-lg-last bg-light mb-5 pr-3">
+        <div class="col bg-light mb-5 pr-3">
             <p class="title-black ml-2 p-2">Summary</p>
             <div class="row">
                 <div class="col-7 offset-2">
@@ -66,18 +66,20 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div>
         <div class="col bg-light pt-3">
-            <p>Please complete the form below to complete your order</p>
+            <p class="title-black ml-2 p-2">Please complete the form below to complete your order</p>
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                 {% csrf_token %}
-                <fieldset class="rounded px-3 mb-5">
-                    <legend class="fieldset-label small text-white px-2 w-auto">Details</legend>
+                <fieldset class="rounded px-3 mb-3">
+                    <legend class="fieldset-label px-2 w-auto">Details</legend>
                     {{ order_form.forename | as_crispy_field }}
                     {{ order_form.surname | as_crispy_field }}
                     {{ order_form.email | as_crispy_field }}
                 </fieldset>
-                <fieldset class="rounded px-3 mb-5">
-                    <legend class="fieldset-label small text-white px-2 w-auto">Delivery Info</legend>
+                <fieldset class="rounded px-3 mb-3">
+                    <legend class="fieldset-label px-2 w-auto">Delivery Info</legend>
                     {{ order_form.address1 | as_crispy_field }}
                     {{ order_form.address2 | as_crispy_field }}
                     {{ order_form.town | as_crispy_field }}
@@ -98,7 +100,7 @@
                     </div>
                 </fieldset>
                 <fieldset class="px-3">
-                    <legend class="fieldset-label small black-text px-2 w-auto">Payment Info</legend>
+                    <legend class="fieldset-label px-2 w-auto">Payment Info</legend>
                     <!-- Stripe card element -->
                     <div class="mb-3" id="card-element"></div>
                     
@@ -110,25 +112,27 @@
 
                 </fieldset>
 
-                <div class="submit-button text-right mt-5 mb-2">
-                    <a href="{% url 'view_bag' %}" class="page-btn btn rounded-0">
-                        <span>
-                            <i class="white fas fa-chevron-left"></i>
-                        </span>
-                        <span class="font-weight-bold">Amend Bag</span>
-                    </a>
-                    <button id="submit-button" class="page-btn btn rounded-0">
-                        <span class="font-weight-bold">Complete Order</span> 
-                        <span>
-                            <i class="white fas fa-lock"></i>
-                        </span>
-                    </button>
-                    <p class="small text-danger my-2">
+                <div class="submit-button my-5 mb-2">
+                    <p class="text-danger my-2 pb-3">
                         <span>
                             <i class="white fas fa-exclamation-circle"></i>
                         </span>
                         <span>Your card will be charged ${{ grand_total|floatformat:2 }}</span>
                     </p>
+                    <div class="">
+                        <a href="{% url 'view_bag' %}" class="page-btn-white-bg button-font btn rounded-0">
+                            <span>
+                                <i class="white fas fa-chevron-left"></i>
+                            </span>
+                            <span>Amend Bag</span>
+                        </a>
+                        <button id="submit-button" class="page-btn-white-bg button-font btn rounded-0">
+                            <span>Complete Order</span> 
+                            <span>
+                                <i class="white fas fa-lock"></i>
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </form>
         </div>

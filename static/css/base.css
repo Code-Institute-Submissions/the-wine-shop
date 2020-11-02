@@ -9,6 +9,7 @@ h3 {
     font-size: 3rem;
     color: white;
     background-color: rgba(129, 0, 32, 0.5);
+    text-align: center;
 }
 
 .title-black {
@@ -24,7 +25,6 @@ html {
 body {
     background: url('/media/bandwglasses.jpg') no-repeat center bottom fixed;
     background-size: contain;
-    /* max-height: 600px; */
     color: white;
     background-color: black;
     z-index: -1;
@@ -34,8 +34,8 @@ body {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .header-container {
@@ -45,8 +45,68 @@ body {
 
 .container-main {
     margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     z-index: 10;
+}
+
+.drop-top {
+    top: 200px;
+}
+
+.allauth-form-inner-content p {
+    color: white;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.login label {
+    color: white;
+}
+
+button {
+    appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: white;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: none;
+    box-sizing: border-box;
+    margin-left: 0;
+    font: 400 13.3333px Arial;
+    padding-top: 0.2rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    border-width: 0;
+    border-style: outset;
+    border-color: none;
+    border-image: initial;
+    position: absolute;
+    bottom: 0;
 }
 
 nav {
@@ -109,21 +169,55 @@ p {
 }
 
 .start-shopping {
-    background-color: rgba(129, 0, 32, 0.5);
-    color: white;
-    font-size: 3rem;
+    /* background-color: rgba(129, 0, 32, 0.5); */
+    /* color: white; */
+    /* font-size: 2rem; */
+    position: fixed;
+    bottom: 15vh;
     z-index: 1000;
+    text-align: center;
+}
+
+.start-shopping a {
+    color: white;
 }
 
 .shopping-btn {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .page-btn {
     background-color: rgba(129, 0, 32, 0.5);
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    /* height: 2.5rem; */
+    text-align: center;
+}
+
+.page-btn-white-bg {
+    background-color: rgba(129, 0, 32, 1);
+    color: white;
+    font-size: 1.5rem;
+    /* height: 2.5rem; */
+    text-align: center;
+}
+
+.login-home-btn {
+    padding-top: 0.2rem;
+    /* padding-bottom: 0.6rem; */
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    
+}
+
+.logout {
+    min-height: 100px;
+}
+
+.signup {
+    padding-bottom: 50px;
 }
 
 .plus-minus {
@@ -134,7 +228,7 @@ p {
 .button-font {
     font-family: 'Berkshire Swash', cursive;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .table {
@@ -153,6 +247,18 @@ label {
 
 .black-text {
     color: black;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: .5rem;
+    font-size: 1.0rem;
+    line-height: inherit;
+    color: black;
+    white-space: normal;
 }
 
 
