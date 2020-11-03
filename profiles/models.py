@@ -18,6 +18,7 @@ class UserProfile(models.Model):
     default_country = CountryField(blank_label='Country', null=True, blank=True)
     default_postcode = models.CharField(max_length=20, null=True, blank=True)
     default_phone_number = models.CharField(max_length=20, null=True, blank=True)
+    default_email = models.CharField(max_length=100, null=True, blank=True)
 
     def __str__(self):
         return self.user.username
