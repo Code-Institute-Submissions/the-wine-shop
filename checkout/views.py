@@ -30,7 +30,7 @@ def cache_checkout_data(request):
     except Exception as e:
         messages.error(request, 'Sorry your payment cannot be  \
             processed at this time. Please try again later.')
-        return HttpResponse(contents=e, status=400)
+        return HttpResponse(content=e, status=400)
 
 
 def checkout(request):
@@ -163,7 +163,7 @@ def checkout_success(request, order_number):
                 user_profile_form.save()
 
     messages.success(request, f'Order processed successfully.  \
-        Your order number is{order_number}. A confirmation  \
+        Your order number is {order_number}. A confirmation  \
         email will be sent to {order.email}.')
 
     if 'shoppingbag' in request.session:
