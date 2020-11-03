@@ -72,9 +72,46 @@ def add_product(request):
             messages.error(request, 'Cannot add product - please ensure the form is completed properly')
     else:
         form = ProductForm()
+
     template = 'products/add_product.html'
     context = {
         'form': form,
+    }
+
+    return render(request, template, context)
+
+
+# View to edit product which takes the id of the product to be edited
+def edit_product(request, product_id):
+    """ Edit a product in the store """
+
+    # get the product
+    product = get_object_or_404(Product, pk=product_id)
+
+    # If request method is post, instantiate new instance of the product form
+    # and include request.files so as to capture the image if one is submitted
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        # If form is valid, save it and redirect user to product detail page
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Product edited successfully')
+            return redirect(reverse('product_details', args=[product.id]))
+        else:
+            # If there are errors on the form...
+            messages.error(request, 'Cannot edit product - please ensure the form is completed properly')
+    else:
+        # instantiate/prefill the form
+        form = ProductForm(instance=product)
+        # message to tell the user they're editing a product
+        messages.info(request, f'You are editing {product.name}')
+
+    # which template to use
+    template = 'products/edit_product.html'
+    # template context with form and product in it
+    context = {
+        'form': form,
+        'product': product,
     }
 
     return render(request, template, context)
