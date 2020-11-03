@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from .models import Product, WineOrigin, WineColour
 from .forms import ProductForm
@@ -55,8 +56,14 @@ def product_details(request, product_id):
     return render(request, 'products/product_details.html', context)
 
 
+@login_required
 def add_product(request):
     """ Add product to the store """
+
+    # If the user is not a superuser send them back to the homepage
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do this.')
+        return redirect(reverse('home'))
 
     # If request method is post, instantiate new instance of the product form
     # and include request.files so as to capture the image if one is submitted
@@ -82,8 +89,14 @@ def add_product(request):
 
 
 # View to edit product which takes the id of the product to be edited
+@login_required
 def edit_product(request, product_id):
     """ Edit a product in the store """
+
+    # If the user is not a superuser send them back to the homepage
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do this.')
+        return redirect(reverse('home'))
 
     # get the product
     product = get_object_or_404(Product, pk=product_id)
@@ -118,8 +131,14 @@ def edit_product(request, product_id):
 
 
 # View to edit product which takes the id of the product to be edited
+@login_required
 def delete_product(request, product_id):
     """ Edit a product in the store """
+
+    # If the user is not a superuser send them back to the homepage
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do this.')
+        return redirect(reverse('home'))
 
     # get the product and delete it
     product = get_object_or_404(Product, pk=product_id)
