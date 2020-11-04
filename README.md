@@ -24,6 +24,11 @@
 - As the Site Owner I want Site Users to get on-screen feedback when they are completing their order details e.g. highlighted fields if compulsory information has not been provided, so that 
 Site Users can immediately rectify their errors/ommissions and ensure submission of accurate customer purchasing data.
 
+- As the Site Owner I want to be able to create a subscription option on the site so that site users can benefit from a discount against their purchases.
+
+- As the Site Owner I want to be able to edit subscription options on the site so that site users have the right information presented to them.
+
+- As the Site Owner I want to be able to delete subscription options from the site so that site users do not see subscription options no longer available to them.
 
 ### Site Users
 
@@ -48,6 +53,8 @@ Site Users can immediately rectify their errors/ommissions and ensure submission
 - As a **first time or returning** Site User I want to receive an emailed confirmation of my order so that I have confidence it was processed correctly through the website and have a record of my payment.
 
 - As a **first time or returning** Site User I want to be able to access wines I have purchased through my profile so that I can write a review about them.
+
+- As a **first time or returning** Site User I want to be able to sign up to or change subscriptions so that I can get good deals on purchases.
 
 - As a **returning** Site User I want to be able to have access to current and past orders I have made so that I can be reminded about what I ordered and maybe choose the same wines again.
 
@@ -173,10 +180,15 @@ As the Site Owner I want Site Users to get on-screen feedback when they are comp
 Site Users can immediately rectify their errors/ommissions and ensure submission of accurate customer purchasing data.
 - When purchasing any wine a site user will see any fields highlighted in red that are compulsory but they have not filled in.  
 
+As the Site Owner I want to be able to create a subscription option on the site so that site users can benefit from a discount against their purchases.
+As the Site Owner I want to be able to edit subscription options on the site so that site users have the right information presented to them.
+As the Site Owner I want to be able to delete subscription options from the site so that site users do not see subscription options no longer available to them.
+- The subscription functionality was not implemented due to running out of time.
+
 4. Site User results
 
 As a **first time** Site User I want the site to be easy to use, easy to understand, and easy to navigate. In particular, I want it to be mobile or tablet friendly so that I can easily access it from any portable devices.
-- I was only able to test the site on one person.  He was able to easily navigate his way around the site, create an account and purchase wine.
+- I was only able to test the site on one person due to covid restrictions.  He was able to easily navigate his way around the site, create an account and purchase wine.
 
 As a **first time or returning** Site User I want to be able to view either a list of products or an individual product so that I can make purchasing decisions based on product details such as price, colour, etc.
 As a **first time or returning** Site User I want to be able to view wines by colour so that I may go straight to the category of my choice and save time on shopping.
@@ -185,7 +197,7 @@ As a **first time or returning** Site User I want to be able to view wines by re
 
 As a **first time or returning** Site User I want to be able to log in and out of a user profile so that I can view and manage anything personally relevant to me, such as orders, payments, reviews, my personal information.
 As a **returning** Site User I want to be able to have access to current and past orders I have made so that I can be reminded about what I ordered and maybe choose the same wines again.
-- My test user was able to create a profile, saving and updating his details as he wished.  He confirmed he could see the order he made as well as historical orders.
+- My test user was able to create a profile, saving and updating his details as he wished.  He confirmed he could see the order he made as well as historical orders.  I checked his profile had been created properly in the Django backend.
 
 As a **first time or returning** Site User I want to be able to add one or more wines from the site to a shopping bag so that I may review my order then purchase them.
 As a **first time or returning** Site User I want to be able to edit one of more items in my shopping bag so that I may purchase the right set of wines and right number of wines.
@@ -194,16 +206,19 @@ As a **first time or returning** Site User I want to be able to delete one or mo
 on screen.  I also logged into the Django database to check what had been recorded there.
 
 As a **first time or returning** Site User I want to be able to use a safe and secure payment method so that I can pay for my purchase without worrying that my card details might get stolen.
-- Stripe's "Test" data was used to test the payment functionality.  The processes worked as expected.
+- Stripe's "Test" data was used to test the payment functionality with the card number 4242 4242 4242 4242.  The processes worked as expected.
 
 As a **first time or returning** Site User I want to receive an emailed confirmation of my order so that I have confidence it was processed correctly through the website and have a record of my payment.
-- This functionality has not been implemented.  A user will receive an email though asking them to verify their email address when they sign up for an account.
+- This functionality has not been implemented.  A user will however receive an email asking them to verify their email address when they sign up for an account and they will receive an email if they wish to reset their password.
 
 As a **first time or returning** Site User I want to be able to access wines I have purchased through my profile so that I can write a review about them.
 - This functionality has not been implemented (it has been started but not completed in time).
 
 As a **returning** Site User I want to be able to access a personalised user account so that I can recover my password if I forget it.
 - My test user changed his password successfully.
+
+As a **first time or returning** Site User I want to be able to sign up to or change subscriptions so that I can get good deals on purchases.
+- This functionality was not implemented due to running out of time.
 
 ### W3C testing
 
