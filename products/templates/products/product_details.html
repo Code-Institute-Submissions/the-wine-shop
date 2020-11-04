@@ -48,7 +48,7 @@
                         <div class="form-row">
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
-                                <div class="form-group w-50">
+                                <div class="form-group form-group-plusminus w-50">
                                     <div class="input-group">
 
                                         <div class="input-group-prepend">
@@ -76,8 +76,12 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <input type="submit" class="white btn rounded-0 text-uppercase mt-1" value="Add to Bag">
-                                <a href="{% url 'products' %}" class="shopping-btn btn rounded-0 mt-5">
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="white btn rounded-0 text-uppercase">Add to Basket</button>
+                            </div>
+                            <div class="col-12">        
+                                <a href="{% url 'products' %}" class="shopping-btn btn rounded-0">
                                     <span>
                                         <i class="white fas fa-chevron-left"></i>
                                     </span>

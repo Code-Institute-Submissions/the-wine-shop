@@ -1,23 +1,4 @@
-h2 {
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 4rem;
-    color: black;
-}
-
-h3 {
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 3rem;
-    color: white;
-    background-color: rgba(129, 0, 32, 0.5);
-    text-align: center;
-}
-
-.title-black {
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 2rem;
-    color: black;
-}
-
+/* ---------------------------------------------------------------------Main DOM sections */
 html {
     height: 100%;
 }
@@ -30,6 +11,10 @@ body {
     z-index: -1;
 }
 
+.header-container {
+    height: 20%; 
+}
+
 .container {
     width: 100%;
     padding-right: 15px;
@@ -37,11 +22,6 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
-
-.header-container {
-        /* padding-top: 164px; */
-        height: 20%; 
-    }
 
 .container-main {
     margin-top: 50px;
@@ -51,9 +31,105 @@ body {
     z-index: 10;
 }
 
+.product-details-container {
+    background-color: rgba(129, 0, 32, 0.5);
+    padding: 20px;
+}
+
+.product-details-container p {
+    color: white;
+}
+
 .drop-top {
     top: 200px;
 }
+
+.smallnav {
+    background-color: white;
+    width: 100vw !important;
+    display: flex!important;
+}
+
+nav {
+    border-top: 2px solid rgba(129, 0, 32, 0.5);
+    border-bottom: 2px solid rgba(129, 0, 32, 0.5);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+}
+
+nav li a {
+    font-size: 3vw;
+}
+
+.dropdown-menu.show {
+    display: block;
+    border: none;
+}
+
+.overlay {
+    background-color: rgb(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+.overlay-dark {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+/* --------------------------------------------------------------------- Text Styling */
+
+h2 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 3vw;
+    color: black;
+}
+
+h3 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 2.5vw;
+    color: white;
+    background-color: rgba(129, 0, 32, 0.5);
+    text-align: center;
+}
+
+.title-black {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 2vw;
+    color: black;
+}
+
+i {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.black-text {
+    color: black;
+}
+
+/* --------------------------------------------------------------------- Forms and Buttons */
 
 .allauth-form-inner-content p {
     color: white;
@@ -64,7 +140,7 @@ body {
     width: 100%;
     height: calc(1.5em + .75rem + 2px);
     padding: .375rem .75rem;
-    font-size: 1rem;
+    font-size: 1vw;
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
@@ -105,73 +181,16 @@ button {
     border-style: outset;
     border-color: none;
     border-image: initial;
-    /* position: absolute; */
     bottom: 0;
 }
 
-nav {
-    border-top: 2px solid rgba(129, 0, 32, 0.5);
-    border-bottom: 2px solid rgba(129, 0, 32, 0.5);
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3rem;
-}
-
-.overlay {
-    background-color: rgb(0, 0, 0, 0.7);
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index: -1;
-}
-
-.overlay-dark {
-    background-color: rgba(0, 0, 0, 0.9);
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index: -1;
-}
-
-.product-details-container {
-    background-color: rgba(129, 0, 32, 0.5);
-    padding: 20px;
-}
-
-.product-details-container p {
+.button-font {
+    font-family: 'Berkshire Swash', cursive;
     color: white;
-}
-
-i {
-    color: black;
-}
-
-.white {
-    color: white;
-}
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-}
-
-.low-row {
-    position: fixed;
-    bottom: 100px;
-    width: 100%;
+    font-size: 2vw;
 }
 
 .start-shopping {
-    /* background-color: rgba(129, 0, 32, 0.5); */
-    /* color: white; */
-    /* font-size: 2rem; */
     position: fixed;
     bottom: 15vh;
     z-index: 1000;
@@ -192,7 +211,6 @@ p {
     background-color: rgba(129, 0, 32, 0.5);
     color: white;
     font-size: 1.5rem;
-    /* height: 2.5rem; */
     text-align: center;
 }
 
@@ -200,16 +218,13 @@ p {
     background-color: rgba(129, 0, 32, 1);
     color: white;
     font-size: 1.5rem;
-    /* height: 2.5rem; */
     text-align: center;
 }
 
 .login-home-btn {
     padding-top: 0.2rem;
-    /* padding-bottom: 0.6rem; */
     padding-left: 0.6rem;
     padding-right: 0.6rem;
-    
 }
 
 .logout {
@@ -225,10 +240,10 @@ p {
     color: white;
 }
 
-.button-font {
-    font-family: 'Berkshire Swash', cursive;
-    color: white;
-    font-size: 1.5rem;
+.low-row {
+    position: fixed;
+    bottom: 100px;
+    width: 100%;
 }
 
 .table {
@@ -238,19 +253,19 @@ p {
 }
 
 .table-heading {
-    font-size: 1.5rem;
+    font-size: 3vw;
 }
 
 .form-check-label {
     color: black;
 }
 
+.form-control {
+        font-size: 2.5vw;
+    }
+
 .allauth-form-inner-content label:not([for='id_remember']) {
     display: none;
-}
-
-.black-text {
-    color: black;
 }
 
 legend {
@@ -259,18 +274,236 @@ legend {
     max-width: 100%;
     padding: 0;
     margin-bottom: .5rem;
-    font-size: 1.0rem;
+    font-size: 1vw;
     line-height: inherit;
     color: black;
     white-space: normal;
 }
 
 
-/* -------------------------------- Media Queries */
+/*-------------------------------------------------------------- Media Queries */
 
-/* padded top to push content down only on medium and up */
-@media (min-width: 992px) {
+/* Tiny devices (phones, 300px and down) */
+
+@media only screen and (max-width: 300px) {
+    .header-container {
+        padding-top: 100px;
+    }
+    h2 {
+        font-size: 7vw;
+    }
+    h3 {
+        font-size: 5.5vw;
+        line-height: 5vh;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 5vw;
+    }
+    nav li a {
+        font-size: 5vw;
+    }
+    nav > li > a {
+        font-size: 4vw;
+    }
+    .list-inline-item:not(:last-child) {
+        margin-right: 0;
+    }
+    .start-shopping {
+        position: fixed;
+        top: 40vh;
+        z-index: 1000;
+        text-align: center;
+    }
+    .page-btn {
+        font-size: 5vw;
+    }
+    .form-group-plusminus {
+        width: 100% !important;
+        font-size: 2vw;
+    }
+    .form-control {
+        font-size: 6.5vw;
+    }
+}
+
+/* Extra small devices (phones, 301px and up) */
+
+@media only screen and (min-width: 301px) {
+    .header-container {
+        padding-top: 130px;
+    }
+    h2 {
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 4.5vw;
+        line-height: 6vh;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 4vw;
+    }
+    nav li a {
+        font-size: 4vw;
+    }
+    nav > li > a {
+        font-size: 3vw;
+    }
+    .list-inline-item:not(:last-child) {
+        margin-right: 0;
+    }
+    .order-history {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .button-font {
+        font-size: 4vw;
+    }
+    .start-shopping {
+        position: fixed;
+        top: 40vh;
+        z-index: 1000;
+        text-align: center;
+    }
+    .form-control {
+        font-size: 3.5vw;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .header-container {
+        padding-top: 130px;
+    }
+    h2 {
+    font-size: 4vw;
+    }
+    h3 {
+        font-size: 3.5vw;
+        line-height: 6vh;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 3vw;
+    }
+    nav li a {
+        font-size: 2vw;
+    }
+    .order-history {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .button-font {
+        font-size: 3vw;
+    }
+    .start-shopping {
+        position: fixed;
+        top: 40vh;
+        z-index: 1000;
+        text-align: center;
+    }
+    .form-control {
+        font-size: 3vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
     .header-container {
         padding-top: 164px;
     }
+    h3 {
+        font-size: 3vw;
+        line-height: 6vh;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 1.5vw;
+    }
+    nav li a {
+        font-size: 2vw;
+    }
+    .start-shopping {
+        position: fixed;
+        top: 40vh;
+        z-index: 1000;
+        text-align: center;
+    }
+    .order-history {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .form-control {
+        font-size: 2vw;
+    }
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+
+    .header-container {
+        padding-top: 164px;
+    }
+    h3 {
+        font-size: 2.5vw;
+        line-height: 6vh;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 1.5vw;
+    }
+    nav li a {
+        font-size: 1.4vw;
+    }
+    .order-history {
+        margin-top: 0px;
+    }
+    .button-font {
+        font-size: 1.5vw;
+    }
+    .start-shopping {
+        position: fixed;
+        top: 30vh;
+        z-index: 1000;
+        text-align: center;
+    }
+    .form-control {
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .header-container {
+        padding-top: 200px;
+    }
+    h3 {
+        font-size: 2.5vw;
+        line-height: 6vh;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 1.2vw;
+    }
+    nav li a {
+        font-size: 1vw;
+    }
+    .order-history {
+        margin-top: 0px;
+    }
+    .button-font {
+        font-size: 1.5vw;
+    }
+    .start-shopping {
+        position: fixed;
+        top: 30vh;
+        z-index: 1000;
+        text-align: center;
+    }
+    .form-control {
+        font-size: 1vw;
+    }
+}
+

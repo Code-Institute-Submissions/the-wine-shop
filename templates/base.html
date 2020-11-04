@@ -38,9 +38,16 @@
     </head>
     <body>
         <header class="container-fluid fixed-top">
-            <div id="topnav" class="row bg-white pt-lg-1 d-none d-lg-flex">
+            <div class="row d-lg-none">
+                <div class="smallnav col-12 text-center">
+                    <a href="/" class="nav-link">
+                        <h2 class="my-0">The Wine Shop</h2>
+                    </a>
+                </div>
+            </div>
+            <div id="topnav" class="row bg-white pt-lg-1 d-none d-lg-flex d-xl-flex">
                 <div class="col-12 col-lg-4 my-auto py-2 py-lg-3 text-center text-lg-left">
-                    <a href="" class="nav-link">
+                    <a href="/" class="nav-link">
                         <h2 class="my-0">The Wine Shop</h2>
                     </a>
                 </div>
@@ -103,6 +110,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    {% include 'includes/mobile-top-header.html' %}
                     {% include 'includes/main-navbar.html' %}
                 </nav>
             </div>
