@@ -5,7 +5,6 @@
 #### This is an online wine sales website aimed at people who want to mail order one or more bottles of wine.
 
 
-
 ## User Stories
 
 ### Site Owner
@@ -84,7 +83,7 @@ Images are loaded to Amazon Web Services. Images were found via Pixabay's open s
 
 - I drafted an entity relationship diagram to map out the data model I originally wanted to achieve, including a number of additional models such as wine colours, wine origins, subscriptions, reviews.
 Unfortunately I ran out of time to fully implement the "reviews" functionality and didn't get time to start a "subscriptions" functionality.
-- [My data model is here](../blob/master/wireframes/Wireframe-DesktopTablet-recipeview.jpg)
+- [My data model is here](../blob/master/DataModel/ERD_updated.jpg)
 
 ## Wireframes
 
@@ -143,6 +142,10 @@ directly from Gitpod.  For this project my connection to Heroku via Github ran s
 
 3. Site Owner results
 
+Super User account:
+username - cjk2020
+password - Codeinst2020
+
 As the Site Owner I want my site to be responsive across multiple devices and operating systems so that I can reach the widest market/audience possible.
 - I have tested this using Google Chrome's developer tools as well as checking the site on Mozilla Firefox and Microsoft Edge.  The site functioned the same across all browsers.
 
@@ -150,7 +153,7 @@ As the Site Owner I want to present my wines to my customers via multiple catego
 - Wines are presented via 2 options: 1) by colour (red or white) and 2) by place of origin (e.g. Spain, Italy, etc).  Filtering through the navigation menu functions accurately.
 
 As the Site Owner I want my customers to receive email confirmations about purchases and subscriptions so that they have confirmation outside of my site/system about what they have paid for.
-- 
+- Email confirmations about purchases were not implemented due to running out of time.
 
 As the Site Owner I want **authenticated superusers** to be able to create new wine 'products' on the site via a form so that the correct information is loaded.
 As the Site Owner I want **authenticated superusers** to be able to edit wine 'products' on the site via a form so that the correct information is maintained and site users have the right information presented to them.
