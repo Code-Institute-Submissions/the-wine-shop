@@ -222,9 +222,8 @@ As a **first time or returning** Site User I want to be able to sign up to or ch
 
 ### W3C testing
 
-All HTML and CSS tests passed.  
-[W3C output](../blob/master/testing/W3C%20results.docx)
-
+HTML testing flagged up a number of issues in the navigation menu (some of which seem to be due to the way the django functionality operates) as well as some issues in pages which do not result in failure of the system to work. 
+Due to running out of time I have unfortunately not resolved many of them.
 
 ## Deployment
 
