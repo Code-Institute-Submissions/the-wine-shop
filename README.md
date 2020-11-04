@@ -91,12 +91,18 @@ Unfortunately I ran out of time to fully implement the "reviews" functionality a
 
 ### Desktop/tablet
 
-- [Recipe Page Design](../blob/master/wireframes/Wireframe-DesktopTablet-recipeview.jpg)
+- [Homepage](../blob/master/Wireframes/Homepage%20-%20desktop%20tablet.jpg)
+- [Forms](../blob/master/Wireframes/Forms%20-%20desktop%20tablet.jpg)
+- [Product page](../blob/master/Wireframes/Product%20page%20-%20desktop%20tablet.jpg)
+- [Products shop](../blob/master/Wireframes/Products%20shop%20-%20desktop%20tablet.jpg)
+- [Profile page](../blob/master/Wireframes/Profile%20-%20desktop%20tablet.jpg)
 
 
 ### Mobile
 
-- [Recipe Page Design](../blob/master/wireframes/Wireframe-Mobile-recipeview.jpg)
+- [Product details](../blob/master/Wireframes/Product%20details%20-%20mobile.jpg)
+- [Profile page](../blob/master/Wireframes/Profile%20-%20mobile.jpg)
+Other mobile pages were to be a straightforward response version of the desktop version with contents running vertically.
 
 
 ## Technologies Used
@@ -129,6 +135,8 @@ Unfortunately I ran out of time to fully implement the "reviews" functionality a
 3. Build the remaining application in the IDE, test each slice of functionality, before backing up to Github and before deployment, at regular intervals.
 4. Test responsiveness of the application on various devices.
 5. Test the application on end users.
+6. Test the application elements thoroughly myself as I build the site e.g. test forms to check outcome of incorrect usage (filling in compulsory fields as well as non-compulsory fields), test that data entered into forms
+is processed through to both Stripe and the Django database backend, test that uploaded product images get stored in AWS or removed if deleted.  
 
 ### Key Testing Results
 
